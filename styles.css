@@ -43,11 +43,11 @@ h6 {
 }
 
 header .logo {
-  font-weight: 700;
-  font-size: 25px;
+  margin-top: -1px;
   color: white;
-  letter-spacing: -0.59px;
-  padding-top: -1px;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: -0.4px;
 }
 
 header .logo:after {
