@@ -77,3 +77,9 @@ header .logo:hover {
   color: #4a4e5f;
   padding: 0 12.5px;
 }
+
+.slider {
+  height: 600px;
+  background-color: var(--accent-color);
+  border-bottom: 15px solid #ea676b;
+}
