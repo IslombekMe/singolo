@@ -1,18 +1,19 @@
 @import "assets/fonts/Lato//lato.css";
 
 :root {
-  --header-background: #2d303a;
-  --text-color: #767e9e;
-  --accent-color: #ec605b;
-  --heading-color: #666d89;
+    --header-background: #2d303a;
+    --text-color: #767e9e;
+    --accent-color: #ec605b;
+    --heading-color: #666d89;
+    --services-color: #f2f2f2;
 }
 
 body {
-  max-width: 1020px;
-  margin: 0 auto;
-  background: whitesmoke;
-  font-family: "Lato";
-  color: var(--text-color);
+    max-width: 1020px;
+    margin: 0 auto;
+    background: whitesmoke;
+    font-family: "Lato";
+    color: var(--text-color);
 }
 
 h1,
@@ -21,43 +22,59 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+    margin: 0;
 }
 
 .section {
-  display: flex;
-  box-sizing: border-box;
-  padding: 0 40px;
-  color: #666d89;
-  border-bottom: 6px solid;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    color: #2b2c2c;
+    border-bottom: 6px solid;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--heading-color);
+    letter-spacing: -0.005em;
+}
+
+.section__desc {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+    color: #767e9e;
 }
 
 .header {
-  background: var(--header-background);
-  height: 95px;
-  color: white;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: 6px solid #323846;
-  text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--header-background);
+    height: 95px;
+    color: white;
+    border-bottom: 6px solid #323846;
+    text-transform: uppercase;
+    padding: 0px 40px;
 }
 
 header .logo {
-  margin-top: -1px;
-  color: white;
-  font-weight: 500;
-  font-size: 25px;
-  letter-spacing: -0.4px;
+    margin-top: -1px;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: -0.4px;
 }
 
 header .logo:after {
-  content: "*";
-  color: var(--accent-color);
+    content: "*";
+    color: var(--accent-color);
 }
 
 header .logo:hover {
-  cursor: pointer;
-  color: var(--accent-color);
+    cursor: pointer;
+    color: var(--accent-color);
 }
 
 .header__navigation {
@@ -68,18 +85,73 @@ header .logo:hover {
 }
 
 .header__navigation__item:hover {
-  color: var(--accent-color);
-  cursor: pointer;
+    color: var(--accent-color);
+    cursor: pointer;
 }
 
 .header__navigation__item:not(:first-child)::before {
-  content: "·";
-  color: #4a4e5f;
-  padding: 0 12.5px;
+    content: "·";
+    color: #4a4e5f;
+    padding: 0 12.5px;
 }
 
 .slider {
-  height: 600px;
-  background-color: var(--accent-color);
-  border-bottom: 15px solid #ea676b;
+    height: 600px;
+    background-color: var(--accent-color);
+    border-bottom: 6px solid #ea676b;
+}
+
+.services {
+    height: 500px;
+    background-color: var(--services-color);
+    border-bottom: 6px solid #ffffff;
+}
+
+.services__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    justify-content: space-between;
+}
+
+.service {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    height: 123px;
+    color: #767e9e;
+}
+
+.service__icon__container {
+    flex: 0 0 80px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 3px;
+    float: left;
+}
+
+.service__icon__container img {
+    width: 60px;
+}
+
+.service__desc__container {
+    height: 100%;
+}
+
+.service__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #666e89;
+}
+
+.service__desc {
+    flex: 1;
+    margin-top: 8px;
+    padding-left: 0.5px;
+    font-size: 12px;
+    line-height: 21.9px;
+    text-align: justify;
+    color: #767e9e;
 }
