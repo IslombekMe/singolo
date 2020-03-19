@@ -61,10 +61,10 @@ header .logo:hover {
 }
 
 .header__navigation {
-  padding-top: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: -0.255px;
+    padding-top: 11px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.255px;
 }
 
 .header__navigation__item:hover {
